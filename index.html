@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ResumeEnginer | Professional Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tech.css">
+    <link rel="stylesheet" href="medical.css">
+    <link rel="stylesheet" href="finance.css">
+    <link rel="stylesheet" href="lawyer.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Playfair+Display:wght@700;900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar no-print">
+            <header class="brand">
+                <i data-lucide="zap"></i>
+                <h1>Resume<span>Enginer</span></h1>
+            </header>
+            
+            <div class="panel">
+                <label>Industry Aesthetic</label>
+                <select id="pSelect">
+                    <option value="tech">Software & Technology</option>
+                    <option value="medical">Medical & Healthcare</option>
+                    <option value="finance">Banking & Finance</option>
+                    <option value="lawyer">Legal & Law</option>
+                </select>
+
+                <label>Layout Style</label>
+                <select id="tSelect">
+                    <option value="style-10">Style 10: Executive High-Impact</option>
+                    <option value="style-3">Style 03: Modern Sidebar</option>
+                    <option value="style-1">Style 01: Classic Grid</option>
+                </select>
+                
+                <div class="button-row">
+                    <button id="downloadBtn" class="primary-btn">DOWNLOAD PDF</button>
+                    <button id="clearBtn" class="clear-btn">CLEAR ALL</button>
+                </div>
+            </div>
+
+            <div id="editor">
+                <div class="input-group">
+                    <label>Personal Information</label>
+                    <input type="text" id="userName" placeholder="Full Name" value="SUKANYA R">
+                    <input type="text" id="userRole" placeholder="Role Title" value="SOFTWARE ENGINEER">
+                    <input type="text" id="userContact" placeholder="Contact/Location" value="Bangalore | +91 7892101653">
+                    <textarea id="userSkills" placeholder="Skills (Comma separated)">Java, Selenium, JIRA, SQL, Manual Testing</textarea>
+                </div>
+
+                <div class="h-row"><span>EXPERIENCE</span> <button onclick="RE.add('exp')">+</button></div>
+                <div id="expList"></div>
+
+                <div class="h-row"><span>PROJECTS</span> <button onclick="RE.add('proj')">+</button></div>
+                <div id="projList"></div>
+            </div>
+        </aside>
+
+        <main class="viewer">
+            <div id="canvas"></div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

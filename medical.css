@@ -1,0 +1,3 @@
+.medical-theme { --accent: #059669; }
+.medical-theme header { border-bottom: 8px solid var(--accent) !important; text-align: left; }
+.medical-theme .section-title { color: var(--accent); background: #f0fdf4 !important; padding: 8px 15px; border-radius: 4px; border: none; }

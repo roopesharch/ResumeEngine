@@ -1,0 +1,3 @@
+.lawyer-theme { --accent: #1e3a8a; }
+.lawyer-theme #canvas { font-family: 'Playfair Display', serif; }
+.lawyer-theme header { border-bottom: 6px double #475569 !important; text-align: center; }

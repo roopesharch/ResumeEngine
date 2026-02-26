@@ -1,0 +1,3 @@
+.tech-theme { --accent: #2563eb; }
+.tech-theme .tag { border: 1px solid var(--accent); color: var(--accent); background: #eff6ff; }
+.tech-theme .section-title { color: #1e3a8a; border-bottom: 2px solid #dbeafe; }
